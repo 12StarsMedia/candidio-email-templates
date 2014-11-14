@@ -1,0 +1,30 @@
+{
+  "name": "candidio-email-templates",
+  "version": "0.1.0",
+  "description": "Email templates for Candidio 3 with the premailer build tool",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.8.10"
+  },
+  "devDependencies": {
+    "gulp-premailer": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/12StarsMedia/candidio-email-templates.git"
+  },
+  "keywords": [
+    "email",
+    "templates",
+    "premailer"
+  ],
+  "author": "Todd Smith-Salter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/12StarsMedia/candidio-email-templates/issues"
+  },
+  "homepage": "https://github.com/12StarsMedia/candidio-email-templates"
+}
