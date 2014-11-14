@@ -7,16 +7,21 @@
 /* -------------------------------------
 		GLOBAL
 ------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
 * {
 	margin: 0;
 	padding: 0;
-	font-family: Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+	font-family: 'Source Sans Pro', Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 	font-size: 100%;
+	font-weight: 400;
 	line-height: 1.6;
 }
 
 img {
 	max-width: 100%;
+	vertical-align: middle;
 }
 
 body {
@@ -34,6 +39,10 @@ a {
 	color: #008ED0;
 }
 
+a.img {
+	text-decoration: none;
+}
+
 .btn-primary {
 	text-decoration: none;
 	color: #FFF;
@@ -42,6 +51,7 @@ a {
 	border-width: 10px 20px;
 	line-height: 2;
 	font-weight: bold;
+	text-transform: uppercase;
 	margin-right: 10px;
 	text-align: center;
 	cursor: pointer;
@@ -73,7 +83,16 @@ a {
 }
 
 .padding {
-	padding: 10px 0;
+	padding: 12px 0;
+}
+
+
+/* -------------------------------------
+		HEADER
+------------------------------------- */
+table.header-wrap {
+	width: 100%;
+	padding: 24px 24px 0;
 }
 
 
@@ -82,11 +101,11 @@ a {
 ------------------------------------- */
 table.body-wrap {
 	width: 100%;
-	padding: 20px;
+	padding: 0 24px 24px;
 }
 
 table.body-wrap .container {
-	border: 1px solid #f0f0f0;
+	/*border: 1px solid #f0f0f0;*/
 }
 
 
@@ -105,7 +124,7 @@ table.footer-wrap {
 }
 
 table.footer-wrap a {
-	color: #999;
+	color: #888;
 }
 
 
@@ -113,33 +132,33 @@ table.footer-wrap a {
 		TYPOGRAPHY
 ------------------------------------- */
 h1, h2, h3 {
-	font-family: Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+	font-family: 'Source Sans Pro', Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
 	line-height: 1.1;
-	margin-bottom: 15px;
-	color: #000;
-	margin: 40px 0 10px;
+	margin-bottom: 12px;
+	color: #525051;
+	margin: 24px 0 12px;
 	line-height: 1.2;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 32px;
 }
 h2 {
-	font-size: 28px;
+	font-size: 24px;
 }
 h3 {
-	font-size: 22px;
+	font-size: 18px;
 }
 
 p, ul, ol {
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 	font-weight: normal;
 	font-size: 14px;
 }
 
 ul li, ol li {
-	margin-left: 5px;
+	margin-left: 6px;
 	list-style-position: inside;
 }
 
@@ -157,8 +176,9 @@ ul li, ol li {
 }
 
 /* Set the padding on the td rather than the div for Outlook compatibility */
-.body-wrap .container {
-	padding: 20px;
+.body-wrap .container,
+.header-wrap .container {
+	padding: 12px;
 }
 
 /* This should also be a block element, so that it will fill 100% of the .container */
@@ -176,7 +196,32 @@ ul li, ol li {
 </style>
 </head>
 
-<body bgcolor="#f6f6f6">
+<body bgcolor="#f1f1f1">
+<!-- header -->
+<table class="header-wrap bottom-border">
+	<tr>
+		<td></td>
+		<td class="container" bgcolor="#FFFFFF">
+			<table style="width: 100%;">
+				<tr>
+					<td>
+						<img src="https://app.candidio.com/assets/img/candidio_logo-target.svg" alt="Candidio" width="24" height="24" />
+					</td>
+					<td style="text-align: right;">
+						<a class="img" href="https://twitter.com/candidio" title="Connect with us on Twitter">
+							<img src="https://dl.dropboxusercontent.com/u/1113046/candidioassets/twitter_icon.png" alt="Twitter" width="24" height="24" />
+						</a>
+						&nbsp;
+						<a class="img" href="https://facebook.com/candidio" title="Connect with us on Facebook">
+							<img src="https://dl.dropboxusercontent.com/u/1113046/candidioassets/facebook_icon.png" alt="Facebook" width="24" height="24" />
+						</a>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td></td>
+	</tr>
+</table>
 
 <!-- body -->
 <table class="body-wrap">
